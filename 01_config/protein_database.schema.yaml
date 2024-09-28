@@ -1,0 +1,29 @@
+"$schema": "http://json-schema.org/draft-04/schema#"
+
+description: Table Gene families and their attributes.
+
+# columns that the 01_config/protein_database.tsv file can have and which type they should be
+properties:
+  Protein:
+    type: string
+    description: wildcard symbol for each protein family
+  Gene_family:
+    type: string
+    description: name of proteins in gene family
+  PFAM:
+    type: string
+    description: PFAM accession number for protein domain
+  Min:
+    type: string
+    description: the minimum length of the amino acid sequence
+  Max: 
+    type: string
+    description: the maximum length of the amino acid sequence
+    
+# columns that the protein_database.tsv file must have to pass schema validation
+required:
+  - Protein
+  - Gene_family
+  - PFAM
+  - Min
+  - Max
