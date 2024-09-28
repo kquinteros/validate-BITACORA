@@ -1,0 +1,4 @@
+Protein	Gene_family	PFAM	Min	Max
+P1	Olfactory Receptors	"PF02949"	285	500
+P2	Gustatory Receptors	"PF08395, PF06151"	285	500
+P3	Gustatory Receptors	"PF06151, PF08395"	285	500

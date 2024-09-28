@@ -1,0 +1,12 @@
+name: genomics
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - agat
+  - gemoma=1.9
+  - hmmer
+  - fasttree
+  - mafft
+  - perl=5.32.1

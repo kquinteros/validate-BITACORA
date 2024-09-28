@@ -1,0 +1,26 @@
+##--- Profile defaults
+
+# non-slurm profile defaults
+use-conda: True
+printshellcmds: True
+
+##--- Protein sequence, protein domains and target genomes --##
+protein_database: '01_config/protein_database.tsv'
+target_genomes: '01_config/target_genomes.tsv'
+
+##--- Parameters---##
+seq_start: "1"
+seq_end: "12"
+pro_start: "1"
+pro_end: "3"
+##--- Path To Executable And Dependencies ---##
+BITACORA: "bitacora" #Check that interproscan is installed
+scripts: "bitacora/Scripts" #Path to BITACORA Scripts directory, if error check params for rule "bitacora_full"
+tools: "bitacora/Scripts/Tools" #Bitacora tools
+
+##--- conda environments --##
+env-r: "../02_env/env-r.yaml"
+env-genomics: "../02_env/env-genomics.yaml"
+env-python: "../02_env/env-python.yaml"
+
+
